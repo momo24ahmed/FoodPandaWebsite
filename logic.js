@@ -1,0 +1,26 @@
+function convertToNewPage(url) {
+                  window.location.href = url;
+}
+
+
+    document.getElementById('orderButton').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'block';
+    });
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+    function showAlert() {
+        alert("Welcome! Select your city below!");
+    }
+
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
